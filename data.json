@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-21T02:06:44.404Z",
+  "generatedAt": "2026-07-21T02:24:04.335Z",
   "source": "20240101-M80-LB",
   "data": {
     "tramo1": {
-      "label": "TRAMO 1",
+      "label": "Tramo 1",
       "subtramos": {
         "General": {
-          "label": "Subtramo General",
+          "label": "General",
           "code": "General",
           "activos": [
             {
@@ -14,75 +14,7 @@
               "report": null
             },
             {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1",
-              "report": null
-            },
-            {
-              "name": "General",
+              "name": "Multitubular SEA Colombia",
               "report": null
             }
           ]
@@ -92,112 +24,8 @@
           "code": "T1A",
           "activos": [
             {
-              "name": "General Tramo 1A",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1A",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1A",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1A",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1A",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1A",
-              "report": null
-            },
-            {
               "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Estación Caribe",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 1",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 1",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 1",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 1",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 1",
-              "report": null
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
             },
             {
               "name": "Sub estación de Tracción 1",
@@ -205,35 +33,7 @@
             },
             {
               "name": "Viaducto Caribe",
-              "report": null
-            },
-            {
-              "name": "Viaducto Caribe",
-              "report": null
-            },
-            {
-              "name": "Viaducto Caribe",
-              "report": null
-            },
-            {
-              "name": "Viaducto Caribe",
-              "report": null
-            },
-            {
-              "name": "Viaducto Caribe",
-              "report": null
-            },
-            {
-              "name": "Viaducto Caribe",
-              "report": null
-            },
-            {
-              "name": "Caño Malpaso",
-              "report": null
-            },
-            {
-              "name": "Caño Malpaso",
-              "report": null
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiMmUzMWY0MjYtYjBjNS00N2U1LTgwYmQtNTI3ODk0YzM4NzYzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
             },
             {
               "name": "Caño Malpaso",
@@ -245,62 +45,6 @@
           "label": "Subtramo T1B",
           "code": "T1B",
           "activos": [
-            {
-              "name": "General Tramo 1B",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1B",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1B",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1B",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1B",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
-            {
-              "name": "Parada Cordoba",
-              "report": null
-            },
             {
               "name": "Parada Cordoba",
               "report": null
@@ -314,47 +58,11 @@
               "report": null
             },
             {
-              "name": "Muros Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 2 Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 2 Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 2 Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 2 Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 2 Patio Taller",
-              "report": null
-            },
-            {
               "name": "Sub estación de Tracción 2 Patio Taller",
               "report": null
             },
             {
               "name": "Soterrado Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Soterrado Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Q. Malpaso Patio Taller",
-              "report": null
-            },
-            {
-              "name": "Q. Malpaso Patio Taller",
               "report": null
             },
             {
@@ -368,34 +76,6 @@
           "code": "T1C",
           "activos": [
             {
-              "name": "General Tramo 1C",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1C",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1C",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1C",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1C",
-              "report": null
-            },
-            {
-              "name": "Q. Malpaso Zona Comercial",
-              "report": null
-            },
-            {
-              "name": "Q. Malpaso Zona Comercial",
-              "report": null
-            },
-            {
               "name": "Q. Malpaso Zona Comercial",
               "report": null
             },
@@ -404,59 +84,7 @@
               "report": null
             },
             {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
-              "name": "Parada Ciudadela",
-              "report": null
-            },
-            {
               "name": "Q. Chumbimbo",
-              "report": null
-            },
-            {
-              "name": "Q. Chumbimbo",
-              "report": null
-            },
-            {
-              "name": "Q. Chumbimbo",
-              "report": null
-            },
-            {
-              "name": "Afluente Caño San Germán",
-              "report": null
-            },
-            {
-              "name": "Afluente Caño San Germán",
               "report": null
             },
             {
@@ -470,88 +98,8 @@
           "code": "T1D",
           "activos": [
             {
-              "name": "General Tramo 1D",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1D",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1D",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1D",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1D",
-              "report": null
-            },
-            {
               "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Estación San German",
-              "report": null
-            },
-            {
-              "name": "Soterrado San Germán",
-              "report": null
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
             },
             {
               "name": "Soterrado San Germán",
@@ -564,40 +112,8 @@
           "code": "T1E",
           "activos": [
             {
-              "name": "General Tramo 1E",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1E",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1E",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1E",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1E",
-              "report": null
-            },
-            {
               "name": "Puente La Iguaná",
-              "report": null
-            },
-            {
-              "name": "Puente La Iguaná",
-              "report": null
-            },
-            {
-              "name": "Puente La Iguaná",
-              "report": null
-            },
-            {
-              "name": "Puente La Iguaná",
-              "report": null
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
             },
             {
               "name": "Q.La Iguaná",
@@ -608,71 +124,7 @@
               "report": null
             },
             {
-              "name": "Sub estación de Tracción 3",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 3",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 3",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 3",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 3",
-              "report": null
-            },
-            {
               "name": "Zanjón Ferrini",
-              "report": null
-            },
-            {
-              "name": "Zanjón Ferrini",
-              "report": null
-            },
-            {
-              "name": "Zanjón Ferrini",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
-              "report": null
-            },
-            {
-              "name": "Parada Colombia",
               "report": null
             },
             {
@@ -686,95 +138,7 @@
           "code": "T1F",
           "activos": [
             {
-              "name": "General Tramo 1F",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1F",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1F",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1F",
-              "report": null
-            },
-            {
-              "name": "General Tramo 1F",
-              "report": null
-            },
-            {
-              "name": "Multitubular SEA Colombia",
-              "report": null
-            },
-            {
-              "name": "Multitubular SEA Colombia",
-              "report": null
-            },
-            {
-              "name": "Multitubular SEA Colombia",
-              "report": null
-            },
-            {
-              "name": "Multitubular SEA Colombia",
-              "report": null
-            },
-            {
               "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Parada Floresta",
-              "report": null
-            },
-            {
-              "name": "Adecuación Floresta Linea B",
-              "report": null
-            },
-            {
-              "name": "Adecuación Floresta Linea B",
-              "report": null
-            },
-            {
-              "name": "Adecuación Floresta Linea B",
-              "report": null
-            },
-            {
-              "name": "Adecuación Floresta Linea B",
               "report": null
             },
             {
@@ -786,76 +150,12 @@
       }
     },
     "tramo2": {
-      "label": "TRAMO 2",
+      "label": "Tramo 2",
       "subtramos": {
         "General": {
-          "label": "Subtramo General",
+          "label": "General",
           "code": "General",
           "activos": [
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
-            {
-              "name": "General Tramo 2",
-              "report": null
-            },
             {
               "name": "General Tramo 2",
               "report": null
@@ -866,14 +166,6 @@
           "label": "Subtramo T2A",
           "code": "T2A",
           "activos": [
-            {
-              "name": "Q. La Hueso",
-              "report": null
-            },
-            {
-              "name": "Q. La Hueso",
-              "report": null
-            },
             {
               "name": "Q. La Hueso",
               "report": null
@@ -889,71 +181,7 @@
               "report": null
             },
             {
-              "name": "Sub estación de Tracción 4",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 4",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 4",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 4",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 4",
-              "report": null
-            },
-            {
               "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Parada Los Pinos",
-              "report": null
-            },
-            {
-              "name": "Zanjón América",
-              "report": null
-            },
-            {
-              "name": "Zanjón América",
               "report": null
             },
             {
@@ -965,59 +193,7 @@
               "report": null
             },
             {
-              "name": "Q. Ana Díaz",
-              "report": null
-            },
-            {
-              "name": "Q. Ana Díaz",
-              "report": null
-            },
-            {
               "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Parada San Juan",
-              "report": null
-            },
-            {
-              "name": "Q. La Magdalena",
-              "report": null
-            },
-            {
-              "name": "Q. La Magdalena",
               "report": null
             },
             {
@@ -1035,71 +211,7 @@
               "report": null
             },
             {
-              "name": "Q. La Matea",
-              "report": null
-            },
-            {
-              "name": "Q. La Matea",
-              "report": null
-            },
-            {
               "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Parada Villa de Aburra",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 5",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 5",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 5",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 5",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 5",
               "report": null
             },
             {
@@ -1117,50 +229,6 @@
               "report": null
             },
             {
-              "name": "Q. La Picacha",
-              "report": null
-            },
-            {
-              "name": "Q. La Picacha",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
-              "name": "Parada La Palma",
-              "report": null
-            },
-            {
               "name": "Parada La Palma",
               "report": null
             }
@@ -1169,72 +237,12 @@
       }
     },
     "tramo3": {
-      "label": "TRAMO 3",
+      "label": "Tramo 3",
       "subtramos": {
         "General": {
-          "label": "Subtramo General",
+          "label": "General",
           "code": "General",
           "activos": [
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
-            {
-              "name": "General Tramo 3",
-              "report": null
-            },
             {
               "name": "General Tramo 3",
               "report": null
@@ -1250,67 +258,11 @@
               "report": null
             },
             {
-              "name": "Q. Santa Rita",
-              "report": null
-            },
-            {
-              "name": "Q. Santa Rita",
-              "report": null
-            },
-            {
-              "name": "Puente Altavista",
-              "report": null
-            },
-            {
               "name": "Puente Altavista",
               "report": null
             },
             {
               "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Parada San Bernardo",
-              "report": null
-            },
-            {
-              "name": "Q. Altavista",
-              "report": null
-            },
-            {
-              "name": "Q. Altavista",
               "report": null
             },
             {
@@ -1328,67 +280,7 @@
               "report": null
             },
             {
-              "name": "Puente Calle 16",
-              "report": null
-            },
-            {
               "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Parada Loma de los Bernal",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 6",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 6",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 6",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 6",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 6",
               "report": null
             },
             {
@@ -1406,55 +298,7 @@
               "report": null
             },
             {
-              "name": "Caño Sorrento",
-              "report": null
-            },
-            {
-              "name": "Caño Sorrento",
-              "report": null
-            },
-            {
               "name": "Puente Guayabala Norte",
-              "report": null
-            },
-            {
-              "name": "Puente Guayabala Norte",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
-              "report": null
-            },
-            {
-              "name": "Parada La Mota",
               "report": null
             },
             {
@@ -1472,71 +316,7 @@
               "report": null
             },
             {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
-              "name": "Parada Cristo Rey",
-              "report": null
-            },
-            {
               "name": "Sub estación de Tracción 7",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 7",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 7",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 7",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 7",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 7",
-              "report": null
-            },
-            {
-              "name": "Afluente La Guayabala",
-              "report": null
-            },
-            {
-              "name": "Afluente La Guayabala",
               "report": null
             },
             {
@@ -1552,10 +332,6 @@
             {
               "name": "Puente Av. Guayabal",
               "report": null
-            },
-            {
-              "name": "Puente Av. Guayabal",
-              "report": null
             }
           ]
         },
@@ -1565,78 +341,6 @@
           "activos": [
             {
               "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Guayabal",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
-              "report": null
-            },
-            {
-              "name": "Parada Apolo",
               "report": null
             },
             {
@@ -1654,71 +358,7 @@
               "report": null
             },
             {
-              "name": "Viaducto Aguacatala",
-              "report": null
-            },
-            {
               "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Estación Aguacatala",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 8",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 8",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 8",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 8",
-              "report": null
-            },
-            {
-              "name": "Sub estación de Tracción 8",
               "report": null
             },
             {
@@ -1733,17 +373,17 @@
   "tramosOrder": [
     {
       "key": "tramo1",
-      "label": "TRAMO 1",
+      "label": "Tramo 1",
       "enabled": true
     },
     {
       "key": "tramo2",
-      "label": "TRAMO 2",
+      "label": "Tramo 2",
       "enabled": true
     },
     {
       "key": "tramo3",
-      "label": "TRAMO 3",
+      "label": "Tramo 3",
       "enabled": true
     }
   ]
