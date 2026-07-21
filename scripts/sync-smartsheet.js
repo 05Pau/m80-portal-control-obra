@@ -22,6 +22,17 @@ function normalize(v) {
   return (v === undefined || v === null) ? '' : String(v).trim();
 }
 
+// Algunos textos ya vienen mal codificados desde Smartsheet (mojibake
+// heredado de una importación previa, ej. "EstaciÃ³n" en vez de "Estación").
+// Se reinterpretan los bytes como Latin-1 y se re-decodifican como UTF-8.
+// Si el resultado queda con caracteres inválidos, se conserva el original
+// en vez de mostrar un glifo roto.
+function fixMojibake(s) {
+  if (!s) return s;
+  const fixed = Buffer.from(s, 'latin1').toString('utf8');
+  return fixed.includes('�') ? s : fixed;
+}
+
 function tramoKeyFromLabel(label) {
   const match = label.match(/(\d+)/);
   return 'tramo' + (match ? match[1] : normalize(label).toLowerCase().replace(/\s+/g, ''));
@@ -82,9 +93,9 @@ async function main() {
     const anc = cellValue(row, colIdByTitle, 'ANC');
     if (anc !== '1') continue; // solo filas de Activo real, no las tareas de desglose
 
-    const tramoLabel = cellValue(row, colIdByTitle, 'TRAMO');
-    const subtramoCode = cellValue(row, colIdByTitle, 'SUBTRAMO');
-    const activoName = cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA');
+    const tramoLabel = fixMojibake(cellValue(row, colIdByTitle, 'TRAMO'));
+    const subtramoCode = fixMojibake(cellValue(row, colIdByTitle, 'SUBTRAMO'));
+    const activoName = fixMojibake(cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA')).replace(/ /g, ' ');
     const link = cellValue(row, colIdByTitle, 'LINK INFORME');
 
     if (!tramoLabel || !subtramoCode || !activoName) {
