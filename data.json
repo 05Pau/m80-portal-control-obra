@@ -1,0 +1,1750 @@
+{
+  "generatedAt": "2026-07-21T02:06:44.404Z",
+  "source": "20240101-M80-LB",
+  "data": {
+    "tramo1": {
+      "label": "TRAMO 1",
+      "subtramos": {
+        "General": {
+          "label": "Subtramo General",
+          "code": "General",
+          "activos": [
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1",
+              "report": null
+            },
+            {
+              "name": "General",
+              "report": null
+            }
+          ]
+        },
+        "T1A": {
+          "label": "Subtramo T1A",
+          "code": "T1A",
+          "activos": [
+            {
+              "name": "General Tramo 1A",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1A",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1A",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1A",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1A",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1A",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Estación Caribe",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 1",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 1",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 1",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 1",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 1",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 1",
+              "report": null
+            },
+            {
+              "name": "Viaducto Caribe",
+              "report": null
+            },
+            {
+              "name": "Viaducto Caribe",
+              "report": null
+            },
+            {
+              "name": "Viaducto Caribe",
+              "report": null
+            },
+            {
+              "name": "Viaducto Caribe",
+              "report": null
+            },
+            {
+              "name": "Viaducto Caribe",
+              "report": null
+            },
+            {
+              "name": "Viaducto Caribe",
+              "report": null
+            },
+            {
+              "name": "Caño Malpaso",
+              "report": null
+            },
+            {
+              "name": "Caño Malpaso",
+              "report": null
+            },
+            {
+              "name": "Caño Malpaso",
+              "report": null
+            }
+          ]
+        },
+        "T1B": {
+          "label": "Subtramo T1B",
+          "code": "T1B",
+          "activos": [
+            {
+              "name": "General Tramo 1B",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1B",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1B",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1B",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1B",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Parada Cordoba",
+              "report": null
+            },
+            {
+              "name": "Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Muros Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Muros Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 2 Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 2 Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 2 Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 2 Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 2 Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 2 Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Soterrado Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Soterrado Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Q. Malpaso Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Q. Malpaso Patio Taller",
+              "report": null
+            },
+            {
+              "name": "Q. Malpaso Patio Taller",
+              "report": null
+            }
+          ]
+        },
+        "T1C": {
+          "label": "Subtramo T1C",
+          "code": "T1C",
+          "activos": [
+            {
+              "name": "General Tramo 1C",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1C",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1C",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1C",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1C",
+              "report": null
+            },
+            {
+              "name": "Q. Malpaso Zona Comercial",
+              "report": null
+            },
+            {
+              "name": "Q. Malpaso Zona Comercial",
+              "report": null
+            },
+            {
+              "name": "Q. Malpaso Zona Comercial",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Parada Ciudadela",
+              "report": null
+            },
+            {
+              "name": "Q. Chumbimbo",
+              "report": null
+            },
+            {
+              "name": "Q. Chumbimbo",
+              "report": null
+            },
+            {
+              "name": "Q. Chumbimbo",
+              "report": null
+            },
+            {
+              "name": "Afluente Caño San Germán",
+              "report": null
+            },
+            {
+              "name": "Afluente Caño San Germán",
+              "report": null
+            },
+            {
+              "name": "Afluente Caño San Germán",
+              "report": null
+            }
+          ]
+        },
+        "T1D": {
+          "label": "Subtramo T1D",
+          "code": "T1D",
+          "activos": [
+            {
+              "name": "General Tramo 1D",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1D",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1D",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1D",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1D",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Estación San German",
+              "report": null
+            },
+            {
+              "name": "Soterrado San Germán",
+              "report": null
+            },
+            {
+              "name": "Soterrado San Germán",
+              "report": null
+            }
+          ]
+        },
+        "T1E": {
+          "label": "Subtramo T1E",
+          "code": "T1E",
+          "activos": [
+            {
+              "name": "General Tramo 1E",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1E",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1E",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1E",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1E",
+              "report": null
+            },
+            {
+              "name": "Puente La Iguaná",
+              "report": null
+            },
+            {
+              "name": "Puente La Iguaná",
+              "report": null
+            },
+            {
+              "name": "Puente La Iguaná",
+              "report": null
+            },
+            {
+              "name": "Puente La Iguaná",
+              "report": null
+            },
+            {
+              "name": "Q.La Iguaná",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 3",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 3",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 3",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 3",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 3",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 3",
+              "report": null
+            },
+            {
+              "name": "Zanjón Ferrini",
+              "report": null
+            },
+            {
+              "name": "Zanjón Ferrini",
+              "report": null
+            },
+            {
+              "name": "Zanjón Ferrini",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Colombia",
+              "report": null
+            }
+          ]
+        },
+        "T1F": {
+          "label": "Subtramo T1F",
+          "code": "T1F",
+          "activos": [
+            {
+              "name": "General Tramo 1F",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1F",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1F",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1F",
+              "report": null
+            },
+            {
+              "name": "General Tramo 1F",
+              "report": null
+            },
+            {
+              "name": "Multitubular SEA Colombia",
+              "report": null
+            },
+            {
+              "name": "Multitubular SEA Colombia",
+              "report": null
+            },
+            {
+              "name": "Multitubular SEA Colombia",
+              "report": null
+            },
+            {
+              "name": "Multitubular SEA Colombia",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Parada Floresta",
+              "report": null
+            },
+            {
+              "name": "Adecuación Floresta Linea B",
+              "report": null
+            },
+            {
+              "name": "Adecuación Floresta Linea B",
+              "report": null
+            },
+            {
+              "name": "Adecuación Floresta Linea B",
+              "report": null
+            },
+            {
+              "name": "Adecuación Floresta Linea B",
+              "report": null
+            },
+            {
+              "name": "Adecuación Floresta Linea B",
+              "report": null
+            }
+          ]
+        }
+      }
+    },
+    "tramo2": {
+      "label": "TRAMO 2",
+      "subtramos": {
+        "General": {
+          "label": "Subtramo General",
+          "code": "General",
+          "activos": [
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            },
+            {
+              "name": "General Tramo 2",
+              "report": null
+            }
+          ]
+        },
+        "T2A": {
+          "label": "Subtramo T2A",
+          "code": "T2A",
+          "activos": [
+            {
+              "name": "Q. La Hueso",
+              "report": null
+            },
+            {
+              "name": "Q. La Hueso",
+              "report": null
+            },
+            {
+              "name": "Q. La Hueso",
+              "report": null
+            }
+          ]
+        },
+        "T2B": {
+          "label": "Subtramo T2B",
+          "code": "T2B",
+          "activos": [
+            {
+              "name": "Sub estación de Tracción 4",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 4",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 4",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 4",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 4",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 4",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Parada Los Pinos",
+              "report": null
+            },
+            {
+              "name": "Zanjón América",
+              "report": null
+            },
+            {
+              "name": "Zanjón América",
+              "report": null
+            },
+            {
+              "name": "Zanjón América",
+              "report": null
+            },
+            {
+              "name": "Q. Ana Díaz",
+              "report": null
+            },
+            {
+              "name": "Q. Ana Díaz",
+              "report": null
+            },
+            {
+              "name": "Q. Ana Díaz",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Parada San Juan",
+              "report": null
+            },
+            {
+              "name": "Q. La Magdalena",
+              "report": null
+            },
+            {
+              "name": "Q. La Magdalena",
+              "report": null
+            },
+            {
+              "name": "Q. La Magdalena",
+              "report": null
+            }
+          ]
+        },
+        "T2C": {
+          "label": "Subtramo T2C",
+          "code": "T2C",
+          "activos": [
+            {
+              "name": "Q. La Matea",
+              "report": null
+            },
+            {
+              "name": "Q. La Matea",
+              "report": null
+            },
+            {
+              "name": "Q. La Matea",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Parada Villa de Aburra",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 5",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 5",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 5",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 5",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 5",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 5",
+              "report": null
+            }
+          ]
+        },
+        "T2D": {
+          "label": "Subtramo T2D",
+          "code": "T2D",
+          "activos": [
+            {
+              "name": "Q. La Picacha",
+              "report": null
+            },
+            {
+              "name": "Q. La Picacha",
+              "report": null
+            },
+            {
+              "name": "Q. La Picacha",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            },
+            {
+              "name": "Parada La Palma",
+              "report": null
+            }
+          ]
+        }
+      }
+    },
+    "tramo3": {
+      "label": "TRAMO 3",
+      "subtramos": {
+        "General": {
+          "label": "Subtramo General",
+          "code": "General",
+          "activos": [
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            },
+            {
+              "name": "General Tramo 3",
+              "report": null
+            }
+          ]
+        },
+        "T3A": {
+          "label": "Subtramo T3A",
+          "code": "T3A",
+          "activos": [
+            {
+              "name": "Q. Santa Rita",
+              "report": null
+            },
+            {
+              "name": "Q. Santa Rita",
+              "report": null
+            },
+            {
+              "name": "Q. Santa Rita",
+              "report": null
+            },
+            {
+              "name": "Puente Altavista",
+              "report": null
+            },
+            {
+              "name": "Puente Altavista",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Parada San Bernardo",
+              "report": null
+            },
+            {
+              "name": "Q. Altavista",
+              "report": null
+            },
+            {
+              "name": "Q. Altavista",
+              "report": null
+            },
+            {
+              "name": "Q. Altavista",
+              "report": null
+            }
+          ]
+        },
+        "T3B": {
+          "label": "Subtramo T3B",
+          "code": "T3B",
+          "activos": [
+            {
+              "name": "Puente Calle 16",
+              "report": null
+            },
+            {
+              "name": "Puente Calle 16",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Parada Loma de los Bernal",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 6",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 6",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 6",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 6",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 6",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 6",
+              "report": null
+            }
+          ]
+        },
+        "T3C": {
+          "label": "Subtramo T3C",
+          "code": "T3C",
+          "activos": [
+            {
+              "name": "Caño Sorrento",
+              "report": null
+            },
+            {
+              "name": "Caño Sorrento",
+              "report": null
+            },
+            {
+              "name": "Caño Sorrento",
+              "report": null
+            },
+            {
+              "name": "Puente Guayabala Norte",
+              "report": null
+            },
+            {
+              "name": "Puente Guayabala Norte",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            },
+            {
+              "name": "Parada La Mota",
+              "report": null
+            }
+          ]
+        },
+        "T3D": {
+          "label": "Subtramo T3D",
+          "code": "T3D",
+          "activos": [
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Parada Cristo Rey",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 7",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 7",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 7",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 7",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 7",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 7",
+              "report": null
+            },
+            {
+              "name": "Afluente La Guayabala",
+              "report": null
+            },
+            {
+              "name": "Afluente La Guayabala",
+              "report": null
+            },
+            {
+              "name": "Afluente La Guayabala",
+              "report": null
+            }
+          ]
+        },
+        "T3E": {
+          "label": "Subtramo T3E",
+          "code": "T3E",
+          "activos": [
+            {
+              "name": "Puente Av. Guayabal",
+              "report": null
+            },
+            {
+              "name": "Puente Av. Guayabal",
+              "report": null
+            }
+          ]
+        },
+        "T3F": {
+          "label": "Subtramo T3F",
+          "code": "T3F",
+          "activos": [
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Guayabal",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            },
+            {
+              "name": "Parada Apolo",
+              "report": null
+            }
+          ]
+        },
+        "T3G": {
+          "label": "Subtramo T3G",
+          "code": "T3G",
+          "activos": [
+            {
+              "name": "Viaducto Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Viaducto Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Estación Aguacatala",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 8",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 8",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 8",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 8",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 8",
+              "report": null
+            },
+            {
+              "name": "Sub estación de Tracción 8",
+              "report": null
+            }
+          ]
+        }
+      }
+    }
+  },
+  "tramosOrder": [
+    {
+      "key": "tramo1",
+      "label": "TRAMO 1",
+      "enabled": true
+    },
+    {
+      "key": "tramo2",
+      "label": "TRAMO 2",
+      "enabled": true
+    },
+    {
+      "key": "tramo3",
+      "label": "TRAMO 3",
+      "enabled": true
+    }
+  ]
+}
