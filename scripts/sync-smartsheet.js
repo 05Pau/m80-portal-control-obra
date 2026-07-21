@@ -1,6 +1,12 @@
 // Sincroniza la Línea Base 20240101-M80-LB desde la API de Smartsheet
 // y regenera data.json en la raíz del repo. Lo ejecuta el workflow
 // de GitHub Actions (.github/workflows/sync-smartsheet.yml).
+//
+// Estructura real de la hoja (confirmada a mano, no es un listado plano):
+// cada Activo tiene muchas filas hijas de desglose de tareas que repiten
+// TRAMO/SUBTRAMO. La fila del Activo en sí se identifica con ANC = 1,
+// y su nombre real vive en la columna G-NOMBRE_TAREA (la columna ACTIVO
+// viene vacía a este nivel).
 const fs = require('fs');
 const path = require('path');
 
@@ -22,11 +28,12 @@ function tramoKeyFromLabel(label) {
 }
 
 function tramoDisplayLabel(label) {
-  return /tramo/i.test(label) ? label : `Tramo ${label}`;
+  const match = label.match(/(\d+)/);
+  return match ? `Tramo ${match[1]}` : label;
 }
 
 function subtramoDisplayLabel(code) {
-  return code.toUpperCase() === 'GEN' ? 'General' : `Subtramo ${code}`;
+  return /^gen(eral)?$/i.test(code) ? 'General' : `Subtramo ${code}`;
 }
 
 async function smartsheetGet(apiPath) {
@@ -63,56 +70,60 @@ async function main() {
     colIdByTitle[normalize(col.title).toUpperCase()] = col.id;
   }
 
-  const requiredCols = ['TRAMO', 'SUBTRAMO', 'ACTIVO', 'LINK INFORME'];
+  const requiredCols = ['ANC', 'TRAMO', 'SUBTRAMO', 'G-NOMBRE_TAREA', 'LINK INFORME'];
   const missing = requiredCols.filter(c => !(c in colIdByTitle));
   if (missing.length) {
     console.warn(`Advertencia: no se encontraron estas columnas: ${missing.join(', ')}. Columnas reales en la hoja: ${sheet.columns.map(c => c.title).join(', ')}`);
   }
 
-  const data = {};
-  const tramoOrderSeen = [];
-  let lastTramoLabel = '';
-  let lastSubtramoCode = '';
+  const groups = new Map(); // key "tramo|||subtramo|||activo" -> { tramoLabel, subtramoCode, activoName, report }
 
   for (const row of sheet.rows) {
-    const activoName = cellValue(row, colIdByTitle, 'ACTIVO');
-    if (!activoName) continue; // fila sin activo (encabezado/agrupación) — se ignora
+    const anc = cellValue(row, colIdByTitle, 'ANC');
+    if (anc !== '1') continue; // solo filas de Activo real, no las tareas de desglose
 
-    const tramoLabelRaw = cellValue(row, colIdByTitle, 'TRAMO') || lastTramoLabel;
-    const subtramoCode = cellValue(row, colIdByTitle, 'SUBTRAMO') || lastSubtramoCode;
+    const tramoLabel = cellValue(row, colIdByTitle, 'TRAMO');
+    const subtramoCode = cellValue(row, colIdByTitle, 'SUBTRAMO');
+    const activoName = cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA');
     const link = cellValue(row, colIdByTitle, 'LINK INFORME');
 
-    lastTramoLabel = tramoLabelRaw;
-    lastSubtramoCode = subtramoCode;
-
-    if (!tramoLabelRaw || !subtramoCode) {
-      console.warn(`Fila ignorada por falta de TRAMO/SUBTRAMO: activo "${activoName}"`);
+    if (!tramoLabel || !subtramoCode || !activoName) {
+      console.warn(`Fila con ANC=1 ignorada por faltarle TRAMO/SUBTRAMO/nombre: row#${row.rowNumber}`);
       continue;
     }
 
-    const tramoKey = tramoKeyFromLabel(tramoLabelRaw);
+    const key = `${tramoLabel}|||${subtramoCode}|||${activoName}`;
+    if (!groups.has(key)) {
+      groups.set(key, { tramoLabel, subtramoCode, activoName, report: null });
+    }
+    const g = groups.get(key);
+    if (!g.report && /^https?:\/\//i.test(link)) {
+      g.report = link;
+    }
+  }
+
+  if (groups.size === 0) {
+    throw new Error('La sincronización no produjo ningún activo (ANC=1) — revisar nombres de columnas o el valor de ANC antes de publicar data.json vacío.');
+  }
+
+  const data = {};
+  const tramoOrderSeen = [];
+
+  for (const g of groups.values()) {
+    const tramoKey = tramoKeyFromLabel(g.tramoLabel);
     if (!data[tramoKey]) {
-      data[tramoKey] = { label: tramoDisplayLabel(tramoLabelRaw), subtramos: {} };
+      data[tramoKey] = { label: tramoDisplayLabel(g.tramoLabel), subtramos: {} };
       tramoOrderSeen.push(tramoKey);
     }
-
     const subtramos = data[tramoKey].subtramos;
-    if (!subtramos[subtramoCode]) {
-      subtramos[subtramoCode] = {
-        label: subtramoDisplayLabel(subtramoCode),
-        code: subtramoCode,
+    if (!subtramos[g.subtramoCode]) {
+      subtramos[g.subtramoCode] = {
+        label: subtramoDisplayLabel(g.subtramoCode),
+        code: g.subtramoCode,
         activos: []
       };
     }
-
-    subtramos[subtramoCode].activos.push({
-      name: activoName,
-      report: /^https?:\/\//i.test(link) ? link : null
-    });
-  }
-
-  if (Object.keys(data).length === 0) {
-    throw new Error('La sincronización no produjo ningún tramo/activo — revisar nombres de columnas o contenido de la hoja antes de publicar data.json vacío.');
+    subtramos[g.subtramoCode].activos.push({ name: g.activoName, report: g.report });
   }
 
   const knownOrder = ['tramo1', 'tramo2', 'tramo3'];
@@ -136,7 +147,7 @@ async function main() {
 
   const outPath = path.join(__dirname, '..', 'data.json');
   fs.writeFileSync(outPath, JSON.stringify(output, null, 2) + '\n');
-  console.log(`OK: ${Object.keys(data).length} tramo(s) sincronizados en ${outPath}`);
+  console.log(`OK: ${groups.size} activo(s) en ${Object.keys(data).length} tramo(s) sincronizados en ${outPath}`);
 }
 
 main().catch(err => {
