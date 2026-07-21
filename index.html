@@ -366,10 +366,14 @@
 
 <script>
 /* ---------------------------------------------------------
-   DATOS — estructura tomada de la Línea Base 20240101-M80-LB
+   DATOS DE RESPALDO — copia estática de la Línea Base 20240101-M80-LB
+   Se usa solo si no se puede cargar data.json (ej. abriendo el
+   archivo directo con doble clic en vez de vía hosting/http).
+   La fuente real en producción es data.json, sincronizado desde
+   Smartsheet por el workflow de GitHub Actions.
    TRAMO > SUBTRAMO > ACTIVO
 --------------------------------------------------------- */
-const DATA = {
+const FALLBACK_DATA = {
   tramo1: {
     label: "Tramo 1",
     subtramos: {
@@ -437,11 +441,14 @@ const DATA = {
   }
 };
 
-const TRAMOS_ORDER = [
+const FALLBACK_TRAMOS_ORDER = [
   { key: "tramo1", label: "Tramo 1", enabled: true },
   { key: "tramo2", label: "Tramo 2", enabled: false },
   { key: "tramo3", label: "Tramo 3", enabled: false }
 ];
+
+let DATA = FALLBACK_DATA;
+let TRAMOS_ORDER = FALLBACK_TRAMOS_ORDER;
 
 let state = { tramo: "tramo1", subtramo: "T1E", activoIndex: 0 };
 
@@ -562,7 +569,38 @@ function renderAll(){
   renderReport();
 }
 
-renderAll();
+function ensureValidState(){
+  if (!DATA[state.tramo]){
+    state.tramo = Object.keys(DATA)[0];
+  }
+  const subtramos = DATA[state.tramo].subtramos;
+  if (!subtramos[state.subtramo]){
+    state.subtramo = Object.keys(subtramos)[0];
+  }
+  const activos = subtramos[state.subtramo].activos;
+  if (!activos[state.activoIndex]){
+    state.activoIndex = 0;
+  }
+}
+
+async function loadData(){
+  try {
+    const res = await fetch('./data.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    if (!json.data || !json.tramosOrder) throw new Error('data.json con formato inesperado');
+    DATA = json.data;
+    TRAMOS_ORDER = json.tramosOrder;
+  } catch (err) {
+    console.warn('No se pudo cargar data.json, usando datos de respaldo locales:', err);
+    DATA = FALLBACK_DATA;
+    TRAMOS_ORDER = FALLBACK_TRAMOS_ORDER;
+  }
+  ensureValidState();
+  renderAll();
+}
+
+loadData();
 </script>
 
 </body>
