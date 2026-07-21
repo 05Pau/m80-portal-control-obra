@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-21T02:34:15.366Z",
+  "generatedAt": "2026-07-21T02:48:35.929Z",
   "source": "20240101-M80-LB",
   "data": {
     "tramo1": {
@@ -99,7 +99,7 @@
           "activos": [
             {
               "name": "Estación San German",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
+              "report": null
             },
             {
               "name": "Soterrado San Germán",
