@@ -47,6 +47,19 @@ function subtramoDisplayLabel(code) {
   return /^gen(eral)?$/i.test(code) ? 'General' : `Subtramo ${code}`;
 }
 
+// La columna LATITUD_LONGITUD viene como texto "6.2518, -75.5636" (u otros
+// separadores). Se intenta extraer dos números decimales con signo.
+function parseLatLng(raw) {
+  if (!raw) return null;
+  const nums = raw.match(/-?\d+\.\d+/g);
+  if (!nums || nums.length < 2) return null;
+  const lat = parseFloat(nums[0]);
+  const lng = parseFloat(nums[1]);
+  if (Number.isNaN(lat) || Number.isNaN(lng)) return null;
+  if (Math.abs(lat) > 90 || Math.abs(lng) > 180) return null;
+  return { lat, lng };
+}
+
 async function smartsheetGet(apiPath) {
   const res = await fetch(`https://api.smartsheet.com/2.0${apiPath}`, {
     headers: { Authorization: `Bearer ${TOKEN}` }
@@ -81,7 +94,7 @@ async function main() {
     colIdByTitle[normalize(col.title).toUpperCase()] = col.id;
   }
 
-  const requiredCols = ['ANC', 'TRAMO', 'SUBTRAMO', 'G-NOMBRE_TAREA', 'LINK INFORME'];
+  const requiredCols = ['ANC', 'TRAMO', 'SUBTRAMO', 'G-NOMBRE_TAREA', 'LINK INFORME', 'LATITUD_LONGITUD'];
   const missing = requiredCols.filter(c => !(c in colIdByTitle));
   if (missing.length) {
     console.warn(`Advertencia: no se encontraron estas columnas: ${missing.join(', ')}. Columnas reales en la hoja: ${sheet.columns.map(c => c.title).join(', ')}`);
@@ -97,6 +110,7 @@ async function main() {
     const subtramoCode = fixMojibake(cellValue(row, colIdByTitle, 'SUBTRAMO'));
     const activoName = fixMojibake(cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA')).replace(/ /g, ' ');
     const link = cellValue(row, colIdByTitle, 'LINK INFORME');
+    const latLng = parseLatLng(cellValue(row, colIdByTitle, 'LATITUD_LONGITUD'));
 
     if (!tramoLabel || !subtramoCode || !activoName) {
       console.warn(`Fila con ANC=1 ignorada por faltarle TRAMO/SUBTRAMO/nombre: row#${row.rowNumber}`);
@@ -105,11 +119,15 @@ async function main() {
 
     const key = `${tramoLabel}|||${subtramoCode}|||${activoName}`;
     if (!groups.has(key)) {
-      groups.set(key, { tramoLabel, subtramoCode, activoName, report: null });
+      groups.set(key, { tramoLabel, subtramoCode, activoName, report: null, lat: null, lng: null });
     }
     const g = groups.get(key);
     if (!g.report && /^https?:\/\//i.test(link)) {
       g.report = link;
+    }
+    if (g.lat === null && latLng) {
+      g.lat = latLng.lat;
+      g.lng = latLng.lng;
     }
   }
 
@@ -134,7 +152,7 @@ async function main() {
         activos: []
       };
     }
-    subtramos[g.subtramoCode].activos.push({ name: g.activoName, report: g.report });
+    subtramos[g.subtramoCode].activos.push({ name: g.activoName, report: g.report, lat: g.lat, lng: g.lng });
   }
 
   const knownOrder = ['tramo1', 'tramo2', 'tramo3'];
