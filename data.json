@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T17:26:35.252Z",
+  "generatedAt": "2026-07-23T17:28:13.633Z",
   "source": "20240101-M80-LB",
   "data": {
     "tramo1": {
@@ -11,11 +11,15 @@
           "activos": [
             {
               "name": "General Tramo 1",
-              "report": null
+              "report": null,
+              "lat": null,
+              "lng": null
             },
             {
               "name": "Multitubular SEA Colombia",
-              "report": null
+              "report": null,
+              "lat": 6.2667667041593695,
+              "lng": -75.60278902899368
             }
           ]
         },
@@ -25,19 +29,27 @@
           "activos": [
             {
               "name": "Estación Caribe",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "lat": 6.2783304873379615,
+              "lng": -75.56988851355423
             },
             {
               "name": "Sub estación de Tracción 1",
-              "report": null
+              "report": null,
+              "lat": 6.277370552865557,
+              "lng": -75.57021665642367
             },
             {
               "name": "Viaducto Caribe",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiMmUzMWY0MjYtYjBjNS00N2U1LTgwYmQtNTI3ODk0YzM4NzYzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiMmUzMWY0MjYtYjBjNS00N2U1LTgwYmQtNTI3ODk0YzM4NzYzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "lat": 6.274475359912448,
+              "lng": -75.57211377680096
             },
             {
               "name": "Caño Malpaso",
-              "report": null
+              "report": null,
+              "lat": 6.274433883667001,
+              "lng": -75.57143858384777
             }
           ]
         },
@@ -47,27 +59,39 @@
           "activos": [
             {
               "name": "Parada Cordoba",
-              "report": null
+              "report": null,
+              "lat": 6.27453136480909,
+              "lng": -75.57617971377086
             },
             {
               "name": "Patio Taller",
-              "report": null
+              "report": null,
+              "lat": 6.2729605320332285,
+              "lng": -75.57825171448326
             },
             {
               "name": "Muros Patio Taller",
-              "report": null
+              "report": null,
+              "lat": 6.2729605320332285,
+              "lng": -75.57825171448326
             },
             {
               "name": "Sub estación de Tracción 2 Patio Taller",
-              "report": null
+              "report": null,
+              "lat": 6.2729605320332285,
+              "lng": -75.57825171448326
             },
             {
               "name": "Soterrado Patio Taller",
-              "report": null
+              "report": null,
+              "lat": 6.273474170143845,
+              "lng": -75.57928518607314
             },
             {
               "name": "Q. Malpaso Patio Taller",
-              "report": null
+              "report": null,
+              "lat": 6.272618106223271,
+              "lng": -75.57928517728321
             }
           ]
         },
@@ -77,19 +101,27 @@
           "activos": [
             {
               "name": "Q. Malpaso Zona Comercial",
-              "report": null
+              "report": null,
+              "lat": 6.273639219924492,
+              "lng": -75.58196903225857
             },
             {
               "name": "Parada Ciudadela",
-              "report": null
+              "report": null,
+              "lat": 6.273062176879303,
+              "lng": -75.58450463984359
             },
             {
               "name": "Q. Chumbimbo",
-              "report": null
+              "report": null,
+              "lat": 6.272655087770447,
+              "lng": -75.58658415654894
             },
             {
               "name": "Afluente Caño San Germán",
-              "report": null
+              "report": null,
+              "lat": 6.2705072882118,
+              "lng": -75.58764873445202
             }
           ]
         },
@@ -99,11 +131,15 @@
           "activos": [
             {
               "name": "Estación San German",
-              "report": null
+              "report": null,
+              "lat": 6.272773910922059,
+              "lng": -75.592308525387
             },
             {
               "name": "Soterrado San Germán",
-              "report": null
+              "report": null,
+              "lat": 6.272535976659167,
+              "lng": -75.59126565100095
             }
           ]
         },
@@ -113,23 +149,33 @@
           "activos": [
             {
               "name": "Puente La Iguaná",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9"
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "lat": 6.271675062589169,
+              "lng": -75.59414361638268
             },
             {
               "name": "Q.La Iguaná",
-              "report": null
+              "report": null,
+              "lat": 6.2716509495529085,
+              "lng": -75.59399092502096
             },
             {
               "name": "Sub estación de Tracción 3",
-              "report": null
+              "report": null,
+              "lat": 6.271040350003498,
+              "lng": -75.59507116735091
             },
             {
               "name": "Zanjón Ferrini",
-              "report": null
+              "report": null,
+              "lat": 6.268816466010501,
+              "lng": -75.59548093642005
             },
             {
               "name": "Parada Colombia",
-              "report": null
+              "report": null,
+              "lat": 6.266336055477347,
+              "lng": -75.59602812394873
             }
           ]
         },
@@ -139,11 +185,15 @@
           "activos": [
             {
               "name": "Parada Floresta",
-              "report": null
+              "report": null,
+              "lat": 6.25972737161122,
+              "lng": -75.59752145802892
             },
             {
               "name": "Adecuación Floresta Linea B",
-              "report": null
+              "report": null,
+              "lat": 6.258947896222314,
+              "lng": -75.59803753157395
             }
           ]
         }
@@ -158,7 +208,9 @@
           "activos": [
             {
               "name": "General Tramo 2",
-              "report": null
+              "report": null,
+              "lat": null,
+              "lng": null
             }
           ]
         },
@@ -168,7 +220,9 @@
           "activos": [
             {
               "name": "Q. La Hueso",
-              "report": null
+              "report": null,
+              "lat": 6.2585135103841365,
+              "lng": -75.5976260589601
             }
           ]
         },
@@ -178,27 +232,39 @@
           "activos": [
             {
               "name": "Sub estación de Tracción 4",
-              "report": null
+              "report": null,
+              "lat": 6.254584167291996,
+              "lng": -75.59853280730191
             },
             {
               "name": "Parada Los Pinos",
-              "report": null
+              "report": null,
+              "lat": 6.253599084728822,
+              "lng": -75.59956396658292
             },
             {
               "name": "Zanjón América",
-              "report": null
+              "report": null,
+              "lat": 6.25444928214088,
+              "lng": -75.59904335942177
             },
             {
               "name": "Q. Ana Díaz",
-              "report": null
+              "report": null,
+              "lat": 6.249179177317468,
+              "lng": -75.60239212546959
             },
             {
               "name": "Parada San Juan",
-              "report": null
+              "report": null,
+              "lat": 6.248482733909972,
+              "lng": -75.60239368650232
             },
             {
               "name": "Q. La Magdalena",
-              "report": null
+              "report": null,
+              "lat": 6.246600332483627,
+              "lng": -75.60255642473845
             }
           ]
         },
@@ -208,15 +274,21 @@
           "activos": [
             {
               "name": "Q. La Matea",
-              "report": null
+              "report": null,
+              "lat": 6.240922043481019,
+              "lng": -75.6028589702629
             },
             {
               "name": "Parada Villa de Aburra",
-              "report": null
+              "report": null,
+              "lat": 6.238036915796478,
+              "lng": -75.60309535648929
             },
             {
               "name": "Sub estación de Tracción 5",
-              "report": null
+              "report": null,
+              "lat": 6.238229970283062,
+              "lng": -75.60276818260175
             }
           ]
         },
@@ -226,11 +298,15 @@
           "activos": [
             {
               "name": "Q. La Picacha",
-              "report": null
+              "report": null,
+              "lat": 6.234145159441313,
+              "lng": -75.60218532602298
             },
             {
               "name": "Parada La Palma",
-              "report": null
+              "report": null,
+              "lat": 6.230078950438146,
+              "lng": -75.60206584381224
             }
           ]
         }
@@ -245,7 +321,9 @@
           "activos": [
             {
               "name": "General Tramo 3",
-              "report": null
+              "report": null,
+              "lat": null,
+              "lng": null
             }
           ]
         },
@@ -255,19 +333,27 @@
           "activos": [
             {
               "name": "Q. Santa Rita",
-              "report": null
+              "report": null,
+              "lat": 6.229372894399909,
+              "lng": -75.60204980849753
             },
             {
               "name": "Puente Altavista",
-              "report": null
+              "report": null,
+              "lat": 6.227014730029342,
+              "lng": -75.60174308419644
             },
             {
               "name": "Parada San Bernardo",
-              "report": null
+              "report": null,
+              "lat": 6.225988356717367,
+              "lng": -75.60070664468076
             },
             {
               "name": "Q. Altavista",
-              "report": null
+              "report": null,
+              "lat": 6.227014730029342,
+              "lng": -75.60174308419644
             }
           ]
         },
@@ -277,15 +363,21 @@
           "activos": [
             {
               "name": "Puente Calle 16",
-              "report": null
+              "report": null,
+              "lat": 6.222081147078488,
+              "lng": -75.59943190185298
             },
             {
               "name": "Parada Loma de los Bernal",
-              "report": null
+              "report": null,
+              "lat": 6.22089530781316,
+              "lng": -75.59937648372212
             },
             {
               "name": "Sub estación de Tracción 6",
-              "report": null
+              "report": null,
+              "lat": 6.221499870998123,
+              "lng": -75.59968326085158
             }
           ]
         },
@@ -295,15 +387,21 @@
           "activos": [
             {
               "name": "Caño Sorrento",
-              "report": null
+              "report": null,
+              "lat": 6.218452148127202,
+              "lng": -75.59880193157245
             },
             {
               "name": "Puente Guayabala Norte",
-              "report": null
+              "report": null,
+              "lat": 6.216140739516968,
+              "lng": -75.59767396241926
             },
             {
               "name": "Parada La Mota",
-              "report": null
+              "report": null,
+              "lat": 6.214594672336513,
+              "lng": -75.59695781272315
             }
           ]
         },
@@ -313,15 +411,21 @@
           "activos": [
             {
               "name": "Parada Cristo Rey",
-              "report": null
+              "report": null,
+              "lat": 6.208191908387098,
+              "lng": -75.592285364002
             },
             {
               "name": "Sub estación de Tracción 7",
-              "report": null
+              "report": null,
+              "lat": 6.2082202166566764,
+              "lng": -75.58980630537955
             },
             {
               "name": "Afluente La Guayabala",
-              "report": null
+              "report": null,
+              "lat": 6.207978745971338,
+              "lng": -75.5901346993143
             }
           ]
         },
@@ -331,7 +435,9 @@
           "activos": [
             {
               "name": "Puente Av. Guayabal",
-              "report": null
+              "report": null,
+              "lat": 6.204186732969214,
+              "lng": -75.58711950016641
             }
           ]
         },
@@ -341,11 +447,15 @@
           "activos": [
             {
               "name": "Parada Guayabal",
-              "report": null
+              "report": null,
+              "lat": 6.203184400769594,
+              "lng": -75.58510488077023
             },
             {
               "name": "Parada Apolo",
-              "report": null
+              "report": null,
+              "lat": 6.1990003725568865,
+              "lng": -75.58485723020702
             }
           ]
         },
@@ -355,15 +465,21 @@
           "activos": [
             {
               "name": "Viaducto Aguacatala",
-              "report": null
+              "report": null,
+              "lat": 6.195672479677935,
+              "lng": -75.5832604052027
             },
             {
               "name": "Estación Aguacatala",
-              "report": null
+              "report": null,
+              "lat": 6.194712781257816,
+              "lng": -75.5826514291771
             },
             {
               "name": "Sub estación de Tracción 8",
-              "report": null
+              "report": null,
+              "lat": 6.1957666554353725,
+              "lng": -75.58346339753074
             }
           ]
         }
