@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-26T21:32:03.351Z",
+  "generatedAt": "2026-07-26T21:41:15.188Z",
   "source": "20240101-M80-LB",
   "data": {
     "tramo1": {
@@ -34,7 +34,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.2783304873379615,
               "lng": -75.56988851355423,
-              "avance": null
+              "avance": 0
             },
             {
               "name": "Sub estación de Tracción 1",
@@ -48,7 +48,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiMmUzMWY0MjYtYjBjNS00N2U1LTgwYmQtNTI3ODk0YzM4NzYzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.274475359912448,
               "lng": -75.57211377680096,
-              "avance": null
+              "avance": 3.3
             },
             {
               "name": "Caño Malpaso",
@@ -170,7 +170,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
-              "avance": null
+              "avance": 9
             },
             {
               "name": "Q.La Iguaná",
