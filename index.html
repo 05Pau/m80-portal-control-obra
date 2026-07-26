@@ -175,6 +175,55 @@
 
   .home-map-row{ display:flex; gap: 16px; height: 460px; }
 
+  /* ---------- TABLA DE FRENTES (arbol Tramo > Subtramo > Activo) ---------- */
+  .frentes-tree-panel{
+    width: 300px; flex-shrink: 0; background: var(--panel-3); border: 1px solid var(--line); border-radius: 8px;
+    padding: 18px 18px; display:flex; flex-direction: column; align-items:center; gap: 12px;
+    overflow-y: auto; min-height: 0;
+  }
+  .frentes-tree{ flex-shrink: 0; width: 100%; }
+  .frentes-tree-empty{
+    font-family:'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--text-faint);
+    text-align:center; line-height: 1.6;
+  }
+
+  .tramo-group{ border: 1px solid var(--line); border-radius: 6px; margin-bottom: 8px; overflow:hidden; }
+  .tramo-group summary{
+    padding: 10px 14px; cursor: pointer; list-style: none; background: var(--panel);
+    font-family:'Space Grotesk', sans-serif; font-weight: 600; font-size: 13.5px; color: var(--text);
+    display:flex; justify-content: space-between; align-items:center;
+  }
+  .tramo-group summary::-webkit-details-marker{ display:none; }
+  .tramo-group summary::before{ content:'▸'; margin-right: 8px; color: var(--rail); }
+  .tramo-group[open] > summary::before{ content:'▾'; }
+  .tramo-group summary .count{
+    font-family:'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--text-faint); font-weight: 400;
+  }
+
+  .subtramo-group{ border-top: 1px solid var(--line); }
+  .subtramo-group summary{
+    padding: 8px 14px 8px 30px; cursor: pointer; list-style: none;
+    font-family:'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-dim);
+    display:flex; justify-content: space-between; align-items:center;
+  }
+  .subtramo-group summary::-webkit-details-marker{ display:none; }
+  .subtramo-group summary::before{ content:'▸'; margin-right: 8px; color: var(--text-faint); font-size: 10px; }
+  .subtramo-group[open] > summary::before{ content:'▾'; }
+  .subtramo-group summary .count{
+    font-family:'IBM Plex Mono', monospace; font-size: 10px; color: var(--text-faint);
+  }
+
+  .frente-row{
+    display:flex; justify-content: space-between; align-items:center;
+    padding: 7px 14px 7px 46px; font-family:'IBM Plex Sans', sans-serif; font-size: 12.5px;
+    color: var(--text-dim); border-top: 1px solid var(--line);
+    cursor: pointer; transition: background 0.15s ease;
+  }
+  .frente-row:hover{ background: rgba(102,191,185,0.08); color: var(--text); }
+  .frente-row:focus-visible{ outline: 2px solid var(--steel); outline-offset: -2px; }
+  .frente-avance{ font-family:'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--text-faint); }
+  .frente-avance.has-data{ color: #2ECC71; font-weight: 600; }
+
   .home-filters{
     width: 200px; flex-shrink: 0; background: var(--panel-3); border: 1px solid var(--line);
     border-radius: 8px; padding: 16px;
@@ -286,6 +335,7 @@
     letter-spacing: 0.5px; text-transform: uppercase; display:block; margin-bottom: 3px;
   }
   .m80-popup a{ color: var(--steel); cursor: pointer; }
+  .popup-avance{ font-family:'IBM Plex Mono', monospace; font-size: 11px; color: #2ECC71; font-weight: 600; }
 
   /* ---------- TRAMO VIEW wrapper (la navegacion Tramo/Subtramo/Activo de siempre) ---------- */
   .tramo-view{ display:flex; flex-direction: column; }
@@ -420,6 +470,7 @@
     .home-map-row{ flex-direction: column; height: auto; }
     .home-filters{ width: auto; }
     .map-stats-panel{ width: auto; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .frentes-tree-panel{ width: auto; max-height: 340px; }
     .tramo-stats-list{ width: auto; flex: 1; min-width: 220px; }
     .home-map-wrap{ height: 320px; }
     .tramo-bar{ padding: 12px 18px; }
@@ -483,6 +534,16 @@ PHN2ZyB3aWR0aD0iNTgiIGhlaWdodD0iODMiIHZpZXdCb3g9IjAgMCA1OCA4MyIgZmlsbD0ibm9uZSIg
       <div id="tramoFilters"></div>
     </div>
     <div class="map-stats-panel" id="mapStatsPanel"></div>
+    <div class="frentes-tree-panel">
+      <p class="stat-ring-title">Avance general del proyecto</p>
+      <div class="stat-ring" id="avanceRing">
+        <div class="stat-ring-inner">
+          <span class="stat-ring-value" id="avanceGeneralValue">0%</span>
+          <span class="stat-ring-label">Avance<br>general</span>
+        </div>
+      </div>
+      <div class="frentes-tree" id="frentesTree"></div>
+    </div>
     <div class="home-map-wrap">
       <div id="projectMap"></div>
     </div>
@@ -642,7 +703,22 @@ const homeView = document.getElementById('homeView');
 const tramoView = document.getElementById('tramoView');
 const tramoFilters = document.getElementById('tramoFilters');
 const mapStatsPanel = document.getElementById('mapStatsPanel');
+const frentesTree = document.getElementById('frentesTree');
 const brandHome = document.getElementById('brandHome');
+
+// Delegado una sola vez: las filas se regeneran en cada renderFrentesTree(),
+// pero el contenedor #frentesTree es siempre el mismo elemento.
+frentesTree.addEventListener('click', (e) => {
+  const row = e.target.closest('.frente-row');
+  if (!row) return;
+  selectActivoAndScroll(row.dataset.tramo, row.dataset.sub, parseInt(row.dataset.idx, 10));
+});
+frentesTree.addEventListener('keydown', (e) => {
+  const row = e.target.closest('.frente-row');
+  if (!row || (e.key !== 'Enter' && e.key !== ' ')) return;
+  e.preventDefault();
+  selectActivoAndScroll(row.dataset.tramo, row.dataset.sub, parseInt(row.dataset.idx, 10));
+});
 
 function scrollToTop(){
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -732,8 +808,11 @@ function buildMapLayers(){
         const reportLink = activo.report
           ? '<br><a data-action="ver">Ver informe →</a>'
           : '<br><span style="color:var(--text-faint)">Aún no inicia construcción</span>';
+        const avanceLine = activo.avance != null
+          ? `<br><span class="popup-avance">Avance: ${activo.avance}%</span>`
+          : '';
         marker.bindPopup(
-          `<div class="m80-popup"><span class="tramo-tag">${tramo.label} · ${sub.label}</span><strong>${activo.name}</strong>${reportLink}</div>`
+          `<div class="m80-popup"><span class="tramo-tag">${tramo.label} · ${sub.label}</span><strong>${activo.name}</strong>${avanceLine}${reportLink}</div>`
         );
         marker.on('popupopen', (e) => {
           const link = e.popup.getElement().querySelector('a[data-action="ver"]');
@@ -849,10 +928,70 @@ function renderMapStats(){
   `;
 }
 
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function renderFrentesTree(){
+  const enabledTramos = TRAMOS_ORDER.filter(t => t.enabled && DATA[t.key]);
+  let total = 0;
+  let sumaAvance = 0;
+  let html = '';
+
+  enabledTramos.forEach(t => {
+    const tramo = DATA[t.key];
+    let tramoConDato = 0;
+    let subHtml = '';
+
+    Object.values(tramo.subtramos).forEach(sub => {
+      let rowsHtml = '';
+      let subConDato = 0;
+      sub.activos.forEach((a, idx) => {
+        total++;
+        sumaAvance += (a.avance != null ? a.avance : 0);
+        if (a.avance == null) return; // la tabla solo lista frentes con dato real
+        subConDato++;
+        rowsHtml += `
+          <div class="frente-row" data-tramo="${t.key}" data-sub="${sub.code}" data-idx="${idx}" tabindex="0" role="button">
+            <span class="frente-name">${escapeHtml(a.name)}</span>
+            <span class="frente-avance has-data">${a.avance}%</span>
+          </div>`;
+      });
+      if (subConDato === 0) return; // subtramo sin ningun dato, no se muestra
+      tramoConDato += subConDato;
+      subHtml += `
+        <details class="subtramo-group" open>
+          <summary>${escapeHtml(sub.label)}<span class="count">${subConDato} con dato</span></summary>
+          ${rowsHtml}
+        </details>`;
+    });
+
+    if (tramoConDato === 0) return; // tramo sin ningun dato, no se muestra
+
+    html += `
+      <details class="tramo-group" open>
+        <summary>${escapeHtml(tramo.label)}<span class="count">${tramoConDato} con dato</span></summary>
+        ${subHtml}
+      </details>`;
+  });
+
+  if (!html) {
+    html = '<p class="frentes-tree-empty">Todavía no hay frentes con % de avance cargado.</p>';
+  }
+
+  const avanceGeneral = total ? Math.round((sumaAvance / total) * 10) / 10 : 0;
+  const ringBg = avanceGeneral <= 0 ? 'var(--line)' : avanceGeneral >= 100 ? '#2ECC71'
+    : `conic-gradient(#2ECC71 0% ${avanceGeneral}%, var(--line) ${avanceGeneral}% 100%)`;
+  document.getElementById('avanceRing').style.background = ringBg;
+  document.getElementById('avanceGeneralValue').textContent = `${avanceGeneral}%`;
+  document.getElementById('frentesTree').innerHTML = html;
+}
+
 function renderHome(){
   renderHomeMap();
   renderTramoFilters();
   renderMapStats();
+  renderFrentesTree();
 }
 
 function renderTramoBar(){
@@ -908,7 +1047,8 @@ function renderActivos(){
     const hasReport = !!activo.report;
     card.className = 'activo-card ' + (hasReport ? 'has-report' : 'no-report') + (i === state.activoIndex ? ' active' : '');
     card.setAttribute('aria-pressed', i === state.activoIndex ? 'true' : 'false');
-    card.innerHTML = `<span class="indicator"></span><span class="name">${activo.name}</span>${hasReport ? '<span class="report-badge">Informe</span>' : ''}`;
+    const badgeText = activo.avance != null ? `${activo.avance}%` : 'Informe';
+    card.innerHTML = `<span class="indicator"></span><span class="name">${activo.name}</span>${hasReport ? `<span class="report-badge">${badgeText}</span>` : ''}`;
     card.addEventListener('click', () => {
       state.activoIndex = i;
       renderReport();
@@ -941,7 +1081,8 @@ function renderReport(){
   viewOnMapBtn.style.display = (activo.lat != null && activo.lng != null) ? 'inline-block' : 'none';
 
   if (activo.report){
-    statusTag.innerHTML = '<span class="status-dot"></span> Conectado';
+    const avanceTxt = activo.avance != null ? ` · Avance ${activo.avance}%` : '';
+    statusTag.innerHTML = `<span class="status-dot"></span> Conectado${avanceTxt}`;
     emptyState.style.display = 'none';
     frame.style.display = 'block';
     loader.classList.remove('hidden');
