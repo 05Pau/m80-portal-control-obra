@@ -47,6 +47,18 @@ function subtramoDisplayLabel(code) {
   return /^gen(eral)?$/i.test(code) ? 'General' : `Subtramo ${code}`;
 }
 
+// La columna AVANCE puede venir como "3.3", "3,3", "3.3%" o como fraccion
+// (0.033). Se normaliza siempre a un numero 0-100, o null si esta vacia o
+// no se puede interpretar.
+function parseAvance(raw) {
+  if (!raw) return null;
+  const limpio = raw.replace('%', '').replace(',', '.').trim();
+  const num = parseFloat(limpio);
+  if (Number.isNaN(num)) return null;
+  const pct = num <= 1 ? num * 100 : num;
+  return Math.round(pct * 10) / 10;
+}
+
 // La columna LATITUD_LONGITUD viene como texto "6.2518, -75.5636" (u otros
 // separadores). Se intenta extraer dos números decimales con signo.
 function parseLatLng(raw) {
@@ -94,7 +106,7 @@ async function main() {
     colIdByTitle[normalize(col.title).toUpperCase()] = col.id;
   }
 
-  const requiredCols = ['ANC', 'TRAMO', 'SUBTRAMO', 'G-NOMBRE_TAREA', 'LINK INFORME', 'LATITUD_LONGITUD'];
+  const requiredCols = ['ANC', 'TRAMO', 'SUBTRAMO', 'G-NOMBRE_TAREA', 'LINK INFORME', 'LATITUD_LONGITUD', 'AVANCE'];
   const missing = requiredCols.filter(c => !(c in colIdByTitle));
   if (missing.length) {
     console.warn(`Advertencia: no se encontraron estas columnas: ${missing.join(', ')}. Columnas reales en la hoja: ${sheet.columns.map(c => c.title).join(', ')}`);
@@ -111,6 +123,7 @@ async function main() {
     const activoName = fixMojibake(cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA')).replace(/ /g, ' ');
     const link = cellValue(row, colIdByTitle, 'LINK INFORME');
     const latLng = parseLatLng(cellValue(row, colIdByTitle, 'LATITUD_LONGITUD'));
+    const avance = parseAvance(cellValue(row, colIdByTitle, 'AVANCE'));
 
     if (!tramoLabel || !subtramoCode || !activoName) {
       console.warn(`Fila con ANC=1 ignorada por faltarle TRAMO/SUBTRAMO/nombre: row#${row.rowNumber}`);
@@ -119,7 +132,7 @@ async function main() {
 
     const key = `${tramoLabel}|||${subtramoCode}|||${activoName}`;
     if (!groups.has(key)) {
-      groups.set(key, { tramoLabel, subtramoCode, activoName, report: null, lat: null, lng: null });
+      groups.set(key, { tramoLabel, subtramoCode, activoName, report: null, lat: null, lng: null, avance: null });
     }
     const g = groups.get(key);
     if (!g.report && /^https?:\/\//i.test(link)) {
@@ -128,6 +141,9 @@ async function main() {
     if (g.lat === null && latLng) {
       g.lat = latLng.lat;
       g.lng = latLng.lng;
+    }
+    if (g.avance === null && avance !== null) {
+      g.avance = avance;
     }
   }
 
@@ -152,7 +168,7 @@ async function main() {
         activos: []
       };
     }
-    subtramos[g.subtramoCode].activos.push({ name: g.activoName, report: g.report, lat: g.lat, lng: g.lng });
+    subtramos[g.subtramoCode].activos.push({ name: g.activoName, report: g.report, lat: g.lat, lng: g.lng, avance: g.avance });
   }
 
   const knownOrder = ['tramo1', 'tramo2', 'tramo3'];
