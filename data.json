@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T20:54:18.757Z",
+  "generatedAt": "2026-07-31T21:57:34.208Z",
   "source": "20240101-M80-LB",
   "data": {
     "tramo1": {
@@ -34,7 +34,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.2783304873379615,
               "lng": -75.56988851355423,
-              "avance": 1.5
+              "avance": 2.8
             },
             {
               "name": "Sub estación de Tracción 1",
