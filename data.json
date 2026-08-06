@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T15:07:52.218Z",
+  "generatedAt": "2026-08-06T23:49:59.084Z",
   "source": "20240101-M80-LB",
   "data": {
     "tramo1": {
@@ -71,6 +71,19 @@
               "avance": null
             },
             {
+              "name": "Soterrado Patio Taller",
+              "report": null,
+              "lat": 6.273474170143845,
+              "lng": -75.57928518607314,
+              "avance": null
+            }
+          ]
+        },
+        "PYT": {
+          "label": "Subtramo PYT",
+          "code": "PYT",
+          "activos": [
+            {
               "name": "Patio Taller",
               "report": null,
               "lat": 6.2729605320332285,
@@ -89,13 +102,6 @@
               "report": null,
               "lat": 6.2729605320332285,
               "lng": -75.57825171448326,
-              "avance": null
-            },
-            {
-              "name": "Soterrado Patio Taller",
-              "report": null,
-              "lat": 6.273474170143845,
-              "lng": -75.57928518607314,
               "avance": null
             },
             {
@@ -171,13 +177,6 @@
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
               "avance": 9
-            },
-            {
-              "name": "Q.La Iguaná",
-              "report": null,
-              "lat": 6.2716509495529085,
-              "lng": -75.59399092502096,
-              "avance": null
             },
             {
               "name": "Sub estación de Tracción 3",
@@ -272,7 +271,7 @@
               "avance": null
             },
             {
-              "name": "Zanjón América",
+              "name": "Q. Zanjón América",
               "report": null,
               "lat": 6.25444928214088,
               "lng": -75.59904335942177,
