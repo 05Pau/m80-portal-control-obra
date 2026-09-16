@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-16T21:13:06.913Z",
+  "generatedAt": "2026-09-16T23:24:29.252Z",
   "source": "176240101-M80-LB",
   "data": {
-    "tramogen": {
-      "label": "GEN",
+    "tramogeneral": {
+      "label": "General",
       "subtramos": {
         "General": {
           "label": "General",
@@ -578,8 +578,8 @@
       "enabled": true
     },
     {
-      "key": "tramogen",
-      "label": "GEN",
+      "key": "tramogeneral",
+      "label": "General",
       "enabled": true
     }
   ]
