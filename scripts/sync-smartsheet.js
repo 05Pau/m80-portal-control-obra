@@ -1,4 +1,4 @@
-// Sincroniza la Línea Base 20240101-M80-LB desde la API de Smartsheet
+// Sincroniza la Línea Base 176240101-M80-LB desde la API de Smartsheet
 // y regenera data.json en la raíz del repo. Lo ejecuta el workflow
 // de GitHub Actions (.github/workflows/sync-smartsheet.yml).
 //
@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const TOKEN = process.env.SMARTSHEET_TOKEN;
-const SHEET_NAME = '20240101-M80-LB';
+const SHEET_NAME = '176240101-M80-LB';
 
 if (!TOKEN) {
   console.error('Falta la variable de entorno SMARTSHEET_TOKEN');
