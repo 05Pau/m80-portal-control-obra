@@ -112,6 +112,17 @@ async function main() {
     console.warn(`Advertencia: no se encontraron estas columnas: ${missing.join(', ')}. Columnas reales en la hoja: ${sheet.columns.map(c => c.title).join(', ')}`);
   }
 
+  // DEBUG TEMPORAL: investigar por qué "Demoliciones Prediales" (TRAMO=GEN) no aparece en data.json
+  for (const row of sheet.rows) {
+    const nombre = cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA');
+    if (/demolic/i.test(nombre)) {
+      console.log(`DEBUG fila#${row.rowNumber} raw cells:`, JSON.stringify(row.cells.map(c => {
+        const col = sheet.columns.find(x => x.id === c.columnId);
+        return { columna: col ? col.title : c.columnId, value: c.value, displayValue: c.displayValue };
+      })));
+    }
+  }
+
   const groups = new Map(); // key "tramo|||subtramo|||activo" -> { tramoLabel, subtramoCode, activoName, report }
 
   for (const row of sheet.rows) {
