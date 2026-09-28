@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T17:52:37.001Z",
+  "generatedAt": "2026-09-28T22:45:49.464Z",
   "source": "176240101-M80-LB",
   "data": {
     "tramogeneral": {
@@ -52,7 +52,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.2783304873379615,
               "lng": -75.56988851355423,
-              "avance": 16
+              "avance": 17
             },
             {
               "name": "Sub estación de Tracción 1",
@@ -190,11 +190,18 @@
           "code": "T1E",
           "activos": [
             {
-              "name": "Puente La Iguaná",
+              "name": "Puente La Iguana",
               "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
-              "avance": 24.8
+              "avance": 13.1
+            },
+            {
+              "name": "Cercha La Iguana",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiMGEwZTJiOTItYTk4My00MTc1LWFjNGEtYmVkNWM3YmQwN2I4IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "lat": 6.271675062589169,
+              "lng": -75.59414361638268,
+              "avance": null
             },
             {
               "name": "Sub estación de Tracción 3",
