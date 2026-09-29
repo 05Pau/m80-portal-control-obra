@@ -112,6 +112,21 @@ async function main() {
     console.warn(`Advertencia: no se encontraron estas columnas: ${missing.join(', ')}. Columnas reales en la hoja: ${sheet.columns.map(c => c.title).join(', ')}`);
   }
 
+  // DEBUG TEMPORAL: ver TODAS las filas con "Demolic" en el nombre, sin filtrar por ANC
+  for (const row of sheet.rows) {
+    const nombre = cellValue(row, colIdByTitle, 'G-NOMBRE_TAREA');
+    if (/demolic/i.test(nombre)) {
+      console.log(`DEBUG fila#${row.rowNumber}:`, JSON.stringify({
+        ANC: cellValue(row, colIdByTitle, 'ANC'),
+        TRAMO: cellValue(row, colIdByTitle, 'TRAMO'),
+        SUBTRAMO: cellValue(row, colIdByTitle, 'SUBTRAMO'),
+        NOMBRE: nombre,
+        LINK: cellValue(row, colIdByTitle, 'LINK INFORME'),
+        AVANCE: cellValue(row, colIdByTitle, 'AVANCE')
+      }));
+    }
+  }
+
   const groups = new Map(); // key "tramo|||subtramo|||activo" -> { tramoLabel, subtramoCode, activoName, report }
 
   for (const row of sheet.rows) {
