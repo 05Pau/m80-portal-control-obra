@@ -1,25 +1,7 @@
 {
-  "generatedAt": "2026-09-29T09:17:33.497Z",
+  "generatedAt": "2026-09-29T16:15:43.053Z",
   "source": "176240101-M80-LB",
   "data": {
-    "tramogeneral": {
-      "label": "General",
-      "subtramos": {
-        "General": {
-          "label": "General",
-          "code": "General",
-          "activos": [
-            {
-              "name": "Demoliciones Prediales",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiNTNmM2RlMGEtYjk1Zi00NTk0LTlmNDAtMmEwZmVhNmNhZGViIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
-              "lat": null,
-              "lng": null,
-              "avance": 84
-            }
-          ]
-        }
-      }
-    },
     "tramo1": {
       "label": "Tramo 1",
       "subtramos": {
@@ -27,6 +9,13 @@
           "label": "General",
           "code": "General",
           "activos": [
+            {
+              "name": "Demoliciones Prediales T1",
+              "report": null,
+              "lat": null,
+              "lng": null,
+              "avance": null
+            },
             {
               "name": "General Tramo 1",
               "report": null,
@@ -49,7 +38,7 @@
           "activos": [
             {
               "name": "Estación Caribe",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiOWM0ZmNiZTItYjBmOC00MGM5LWE1NzYtMzMwNDJmOTQ4OWI2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "report": "https://app.powerbi.com/reportEmbed?reportId=e24d6106-9b9c-44fa-ad5a-b114288ff5cf&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
               "lat": 6.2783304873379615,
               "lng": -75.56988851355423,
               "avance": 17
@@ -63,7 +52,7 @@
             },
             {
               "name": "Viaducto Caribe",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiMmUzMWY0MjYtYjBjNS00N2U1LTgwYmQtNTI3ODk0YzM4NzYzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "report": "https://app.powerbi.com/reportEmbed?reportId=6a7474d5-ac6a-48a1-93a3-dde2962577d9&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
               "lat": 6.274475359912448,
               "lng": -75.57211377680096,
               "avance": 3.3
@@ -191,14 +180,14 @@
           "activos": [
             {
               "name": "Puente La Iguana",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiZmUzNTNkYWItYmE1My00ZjFlLWEwZTEtNzJjNzcwYmU2NGNlIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "report": "https://app.powerbi.com/reportEmbed?reportId=a269a1ad-3003-4258-b564-ee78182831d4&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
               "avance": 13.1
             },
             {
               "name": "Cercha La Iguana",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiMGEwZTJiOTItYTk4My00MTc1LWFjNGEtYmVkNWM3YmQwN2I4IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
+              "report": "https://app.powerbi.com/reportEmbed?reportId=74ecba60-7eb5-49d5-aada-c6f2507dd053&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
               "avance": null
@@ -582,11 +571,6 @@
     {
       "key": "tramo3",
       "label": "Tramo 3",
-      "enabled": true
-    },
-    {
-      "key": "tramogeneral",
-      "label": "General",
       "enabled": true
     }
   ]
