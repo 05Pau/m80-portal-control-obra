@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T18:07:52.797Z",
+  "generatedAt": "2026-09-29T18:15:35.493Z",
   "source": "176240101-M80-LB",
   "data": {
     "tramo1": {
@@ -38,7 +38,7 @@
           "activos": [
             {
               "name": "Estación Caribe",
-              "report": "https://app.powerbi.com/reportEmbed?reportId=50703b8f-c125-49c9-b4aa-8ba2d6fe71fa&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiNmE2NzIxY2MtMThlMy00YTQzLWIxZTQtN2UxOWI5NzJiMWQ4IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.2783304873379615,
               "lng": -75.56988851355423,
               "avance": 25.8
@@ -52,7 +52,7 @@
             },
             {
               "name": "Viaducto Caribe",
-              "report": "https://app.powerbi.com/reportEmbed?reportId=253587d9-ac3e-403c-9429-27d0ab28c939&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiNGJhNzcwOTYtYTdhMi00NjA0LTg0OGQtMTMxY2UzNjY3ZTEzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.274475359912448,
               "lng": -75.57211377680096,
               "avance": 3.3
@@ -180,14 +180,14 @@
           "activos": [
             {
               "name": "Puente La Iguana",
-              "report": "https://app.powerbi.com/reportEmbed?reportId=cd9ce34a-8a3d-4a3a-9ac1-a91d966bbc69&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiNjUyYWQ1NjUtMWQ2MS00YTk1LThjMTktOGRkYWE3ZWQwMWE2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
               "avance": 24.8
             },
             {
               "name": "Cercha La Iguana",
-              "report": "https://app.powerbi.com/reportEmbed?reportId=25b3bbb3-14b8-4ff6-a8fc-f4069070ba48&autoAuth=true&ctid=c68a0b55-53cf-469f-b9be-e34736197d58",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiNjY5YjA3OTktZmQxNy00OWQ4LTg0ODUtZWUyM2U1MWViYTNhIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
               "avance": 100
