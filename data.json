@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T18:21:51.582Z",
+  "generatedAt": "2026-09-29T20:03:51.641Z",
   "source": "176240101-M80-LB",
   "data": {
     "tramogeneral": {
@@ -77,7 +77,7 @@
             },
             {
               "name": "Caño Malpaso",
-              "report": null,
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiZTBhNjM0ZjAtNTc4Zi00MzhjLTk0NGQtNjU2NzQ2OTQzOWQ2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.274433883667001,
               "lng": -75.57143858384777,
               "avance": null
