@@ -1,7 +1,25 @@
 {
-  "generatedAt": "2026-09-29T18:19:32.523Z",
+  "generatedAt": "2026-09-29T18:21:51.582Z",
   "source": "176240101-M80-LB",
   "data": {
+    "tramogeneral": {
+      "label": "General",
+      "subtramos": {
+        "General": {
+          "label": "General",
+          "code": "General",
+          "activos": [
+            {
+              "name": "Demoliciones Prediales",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiNTNmM2RlMGEtYjk1Zi00NTk0LTlmNDAtMmEwZmVhNmNhZGViIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9&pageName=bf31483bfffcf52c2d6e",
+              "lat": null,
+              "lng": null,
+              "avance": 84
+            }
+          ]
+        }
+      }
+    },
     "tramo1": {
       "label": "Tramo 1",
       "subtramos": {
@@ -571,6 +589,11 @@
     {
       "key": "tramo3",
       "label": "Tramo 3",
+      "enabled": true
+    },
+    {
+      "key": "tramogeneral",
+      "label": "General",
       "enabled": true
     }
   ]
