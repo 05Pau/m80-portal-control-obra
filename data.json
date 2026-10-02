@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T03:51:41.235Z",
+  "generatedAt": "2026-10-02T04:57:38.447Z",
   "source": "176240101-M80-LB",
   "data": {
     "tramogeneral": {
@@ -28,24 +28,10 @@
           "code": "General",
           "activos": [
             {
-              "name": "Demoliciones Prediales T1",
-              "report": null,
-              "lat": null,
-              "lng": null,
-              "avance": null
-            },
-            {
               "name": "General Tramo 1",
               "report": null,
               "lat": null,
               "lng": null,
-              "avance": null
-            },
-            {
-              "name": "Multitubular SEA Colombia",
-              "report": null,
-              "lat": 6.2667667041593695,
-              "lng": -75.60278902899368,
               "avance": null
             }
           ]
@@ -59,7 +45,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiNmE2NzIxY2MtMThlMy00YTQzLWIxZTQtN2UxOWI5NzJiMWQ4IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.2783304873379615,
               "lng": -75.56988851355423,
-              "avance": 25.8
+              "avance": 8
             },
             {
               "name": "Sub estación de Tracción 1",
@@ -73,7 +59,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiNGJhNzcwOTYtYTdhMi00NjA0LTg0OGQtMTMxY2UzNjY3ZTEzIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.274475359912448,
               "lng": -75.57211377680096,
-              "avance": 3.3
+              "avance": 3.6
             },
             {
               "name": "Caño Malpaso",
@@ -134,7 +120,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiY2ZhNDUzY2UtN2RjYS00NzhmLTg3MGUtNDRmZDJmZGE5ODExIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.272618106223271,
               "lng": -75.57928517728321,
-              "avance": 0
+              "avance": 3.6
             }
           ]
         },
@@ -201,7 +187,7 @@
               "report": "https://app.powerbi.com/view?r=eyJrIjoiNjUyYWQ1NjUtMWQ2MS00YTk1LThjMTktOGRkYWE3ZWQwMWE2IiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": 6.271675062589169,
               "lng": -75.59414361638268,
-              "avance": 24.8
+              "avance": 33.2
             },
             {
               "name": "Cercha La Iguana",
