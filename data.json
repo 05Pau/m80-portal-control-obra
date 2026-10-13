@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T12:20:42.081Z",
+  "generatedAt": "2026-10-13T19:39:39.940Z",
   "source": "176240101-M80-LB",
   "data": {
     "tramogeneral": {
@@ -11,10 +11,10 @@
           "activos": [
             {
               "name": "Demoliciones Prediales",
-              "report": "https://app.powerbi.com/view?r=eyJrIjoiNTNmM2RlMGEtYjk1Zi00NTk0LTlmNDAtMmEwZmVhNmNhZGViIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9&pageName=bf31483bfffcf52c2d6e",
+              "report": "https://app.powerbi.com/view?r=eyJrIjoiOGE4YTdjNTUtZWE4NC00MTI0LThhODMtNTMxMGE0NWNiMjdjIiwidCI6ImM2OGEwYjU1LTUzY2YtNDY5Zi1iOWJlLWUzNDczNjE5N2Q1OCJ9",
               "lat": null,
               "lng": null,
-              "avance": 84
+              "avance": 88
             }
           ]
         }
